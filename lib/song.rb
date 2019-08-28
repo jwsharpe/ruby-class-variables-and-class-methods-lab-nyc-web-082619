@@ -47,7 +47,7 @@ class Song
     return_hash = {}
     
     items.each do |item|
-      return_hash[item] ||= 1 unless return_hash[item] += 1
+      return_hash[item] ||= 1 or return_hash[item] += 1
 #        if(!return_hash.include?(item))
 #            return_hash[item] = 1
 #        else
