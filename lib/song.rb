@@ -45,6 +45,7 @@ class Song
   private
   def self.histogram(items)
     return_hash = {}
+    
     items.each do |item|
         if(!return_hash.include?(item))
             return_hash[item] = 1
@@ -52,6 +53,7 @@ class Song
             return_hash[item] += 1
         end
     end
+    
     return_hash
   end
   
